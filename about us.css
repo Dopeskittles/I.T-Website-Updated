@@ -1,0 +1,335 @@
+*{
+  margin: 0;
+  padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+.team-section{
+	overflow: hidden;
+	text-align: center;
+	//background: #ffffff;
+	padding: 60px;
+}
+.team-section h1{
+	text-transform: uppercase;
+	margin-bottom: 60px;
+	color: #fff;
+	font-size: 30px;
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.team-section h2{
+	text-transform: uppercase;
+	margin-bottom: 60px;
+	color: #fff;
+	font-size: 30px;
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+
+.border{
+	display: block;
+	margin: auto;
+	width: 160px;
+	height: 3px;
+	background: #fff;
+	margin-bottom: 40px;
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+.ps{
+	margin-bottom: 40px;
+}
+.ps a{
+	display: inline-block;
+	margin: 0 30px;
+	width: 160px;
+	height: 160px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.ps a img{
+	width: 100%;
+	filter: grayscale(100%);
+	transition: 0.4s;
+}
+.ps a:hover > img{
+	filter: none;
+}
+.section{
+	width: 600px;
+	margin: auto;
+	font-size: 20px;
+	color: #fff;
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+	text-align: justify;
+	height: 0;
+	overflow: hidden;
+}
+.section:target{
+	height: auto;
+
+}
+.name{
+	display: block;
+	margin-bottom: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 22px;
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+  justify-content: center;
+	align-items: center;
+	
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial', serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.288), rgba(0,0,0,0.7)), url(img/tile.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  width: 100%;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+header .logo{
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  float: left;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: left;
+  
+}
+
+header .navbar{
+  display: flex;
+  float: right;
+}
+
+header .navbar ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header .navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+ 
+}
+
+header .navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+}
+
+header .navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #f12256;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  transition: 0.5s;
+}
+
+header .navbar ul li:hover:after{
+  width: 100%;
+}
+
+
+.title-text{
+  margin-top: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1em;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  opacity: 100%;
+  align-items: center;
+
+}
+.banner {
+	width: 100%;
+	height: 27%;
+	display: block;
+}
+
+header{
+  padding: 15px 60px;
+}
+
+h2{
+  margin-top: 17px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.7em;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  opacity: 85%;
+  text-shadow: 0 0 15px #fff;
+  display: block;
+}
+
+footer{
+  background: transparent;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  padding: 30px 100px;
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+
+@media (max-width: 991px){
+
+.logo{
+  font-size: 20px;
+  margin: left;
+}
+
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  width: auto;
+  background: transparent;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+footer{
+  background: transparent;
+  box-sizing: border-box;
+  color: #fff;
+  text-align: center;
+  padding: 30px 100px;
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+
+header .navbar{
+  width: auto;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  float: right;
+
+}
+
+
+header .navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: auto;
+  position: relative;
+ 
+}
+
+header .navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+}
+
+header .navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #f12256;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  transition: 0.5s;
+}
+
+header .navbar ul li:hover:after{
+  width: 100%;
+}
+
+.btn{
+  align-items: center;
+  margin: auto;
+}
+
+
+body {
+	margin: auto;
+	padding: 0;
+	font-family: 'Arial', serif;
+  overflow-x: hidden;
+  -webkit-background-size: cover;
+  align-items: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+header{
+  padding: 0 20px;
+}
+
+.section{
+	width: 200px;
+	margin: auto;
+	font-size: 15px;
+	text-align: center;
+	height: 0;
+	overflow: hidden;
+}
+
+.team-section h1{
+	text-transform: uppercase;
+	margin-bottom: 60px;
+	color: #fff;
+	font-size: 20px;
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.team-section h2{
+	text-transform: uppercase;
+	margin-bottom: 60px;
+	color: #fff;
+	font-size: 20px;
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+
+}

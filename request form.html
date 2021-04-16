@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+	  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Request Form</title>
+    <link rel="stylesheet" type="text/css" href="request form.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+<body>
+
+	
+
+	<div class="banner">
+    <header>
+      <div class="banner">
+        <a class="logo" href="welcome.html">321Movie Reviews</a>
+        <div class="navbar">
+			    
+      <ul>
+			
+	  	<li><a href="index.html">Home</a></li>
+	  	<li><a href="about us.html">About Us</a></li>
+		  <li><a href="request form.html">Request Form</a></li>
+
+	    </ul>
+		
+   
+        </div>
+      </div>
+	</header>	
+	</div>
+  
+      <section class="request">
+        <div class="content">
+          <h2>Request Form</h2>
+          <p> Hi, thank you for visiting our website. To request a movie or tv series to be added, please fill out the request form with the relevant infomation. Your request will be process within three working days and a response will be emiled to you.</p>
+        </div>
+        <div class="container">
+          <div class="contact-Info">
+            <div class="box">
+              <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+              <div class="text">
+                <h3>Phone</h3>
+                <p>888-888-888</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+              <div class="text">
+                <h3>Email</h3>
+                <p>blank@temporary-mail.net</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-Form">
+            <form>
+              <h2>Send Message</h2>
+              <div class="inputBox">
+                <input type="text" name="Full name" required="required">
+                <span>Full Name</span>
+              </div>
+              <div class="inputBox">
+                <input type="email" name="email" required="required">
+                <span>Email</span>
+              </div>
+              <div class="inputBox">
+                <textarea name="requestInfo" required="required"></textarea>
+                <span>Type your request.....</span>
+              </div>
+              <div class="inputBox">
+                <input type="submit" name="sendInfo" onclick="Formsubmit()"/ value="Send">
+              </div>
+              </form>
+              <script>
+                const server="https://login38.p.rapidapi.com/ygnhrth535gfdv";
+                async function Formsubmit(){
+                fetch(server, {
+              "method": "POST",
+              "headers": {
+                "content-type": "application/x-www-form-urlencoded",
+                "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36",
+                "x-csrftoken": "12",
+                "accept": "*/*",
+                "accept-language": "gzip, deflate",
+                "cookie": "csrftoken=12",
+                "x-rapidapi-key": "1942c9e20cmshed1754f2cb0a7d9p16ebe7jsn386a2f493715",
+                "x-rapidapi-host": "login38.p.rapidapi.com"
+              },
+              "body": {
+                "Fullname": "",
+                "email": "",
+                "requestInfo": ""
+              }
+            })
+            .then(response => {
+              console.log(response);
+            })
+            .catch(err => {
+              console.error(err);
+            });
+            }
+  </script>
+          </div>
+        </div>
+      </section>
+
+</body>
+
+<footer>
+    <h4>© 2021-2021, 321Movie Reviews.com, Inc. or its affiliates</h4>
+    </footer>	
+    
+</html>
